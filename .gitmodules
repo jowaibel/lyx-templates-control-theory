@@ -1,0 +1,3 @@
+[submodule "ieeeconf-lyx"]
+	path = ieeeconf-lyx
+	url = https://github.com/TAMS-Group/LyX-Templates.git
