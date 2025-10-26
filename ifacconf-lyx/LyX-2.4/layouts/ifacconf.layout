@@ -1,0 +1,366 @@
+#% Do not delete he line below; configure depends on this
+#  \DeclareLaTeXClass{article (IFACconf)}
+# Author : Allan Rae <rae@lyx.org>
+#
+# revised for IEEEtran version 1.7a
+# Author: Uwe Stöhr (uwestoehr@web.de)
+#
+# IFACconf textclass definition file.
+
+
+Format 35
+
+Sides          1
+SecNumDepth    2
+TocDepth       3
+DefaultStyle   Standard
+
+ClassOptions
+  FontSize    9|10|11|12
+end
+
+
+# This is just to show how to declare the default font.
+# The defaults are exactly those shown here.
+DefaultFont
+  Family       Roman
+  Series       Medium
+  Shape        Up
+  Size         Normal
+  Color        None
+EndFont
+
+
+Style Standard
+  Margin       Static
+  LatexType    Paragraph
+  LatexName    dummy
+  ParIndent    MM
+  ParSkip      0.4
+  Align        Block
+  AlignPossible Block, Left, Right, Center
+  LabelType    No_Label
+End
+
+Counter        theorem
+End
+
+Input stdcounters.inc
+Input stdfloats.inc
+Input stdlists.inc
+Input stdsections.inc
+Input stdstarsections.inc
+Input stdlayouts.inc
+Input lyxmacros.inc
+
+ProvidesModule theorems-std
+#Input theorems.inc
+
+NoStyle Chapter
+NoCounter chapter
+NoStyle Chapter*
+
+
+##### Title commands from ifacconf.cls ####
+
+Style Title
+  Margin       Static
+  LatexType    Command
+  LatexName    title
+  Category     FrontMatter
+  InTitle      1
+  OptionalArgs 0
+  ParSkip      0.4
+  ItemSep      0
+  TopSep       0
+  BottomSep    1
+  ParSep       1
+  Align        Center
+  LabelType    No_Label
+  Font
+    Series     Bold
+    Size       Large
+  EndFont
+End
+
+Style Thanks
+  Category     FrontMatter
+  Margin       First_Dynamic
+  LatexType    Command
+  LatexName    thanks
+  InTitle      1
+  OptionalArgs 1
+  TopSep       0.7
+  BottomSep    0.7
+  ParSkip      0.4
+  LabelType    Static
+  LabelString  "Thanks---"
+  Font
+    Series     Medium
+    Size       small
+  EndFont
+End
+
+Style Author
+  Margin       Static
+  LatexType    Command
+  Category     FrontMatter
+  InTitle      1
+  OptionalArgs 1
+  LatexName    author
+  LabelSep     xxx
+  ParSkip      0.3
+  TopSep       0.3
+  BottomSep    0.4
+  ParSep       0.4
+  Align        Center
+  LabelType    No_Label
+  Font
+    Shape      Up
+    Size       Normal
+  EndFont
+End
+
+Style Address
+  Margin       Static
+  LatexType    Command
+  Category     FrontMatter
+  InTitle      1
+  OptionalArgs 1
+  LatexName    address
+  LabelSep     xxx
+  ParSkip      0.3
+  TopSep       0.3
+  BottomSep    0.4
+  ParSep       0.2
+  Align        Center
+  LabelType    No_Label
+  Font
+    Shape      Italic
+    Size       Normal
+  EndFont
+End
+
+Style Page_headings
+  LaTeXType    Command
+  LaTeXName    markboth
+  Category     FrontMatter
+  InTitle      1
+  Align        Center
+  Font
+    Size       Small
+  EndFont
+  Preamble
+  % protect \markboth against an old bug reintroduced in babel >= 3.8g
+  \let\oldforeign@language\foreign@language
+  \DeclareRobustCommand{\foreign@language}[1]{%
+    \lowercase{\oldforeign@language{#1}}}
+  EndPreamble
+End
+
+Style MarkBoth
+  ObsoletedBy  Page_headings
+End
+
+Style Abstract
+  Margin       First_Dynamic
+  LatexType    Environment
+  LatexName    abstract
+  Category     FrontMatter
+  TopSep       0.7
+  BottomSep    0.7
+  ParSkip      0.4
+  LabelType    Static
+  LabelString  "Abstract---"
+  Font
+    Series     Medium
+    Size       small
+  EndFont
+  LabelFont
+    Shape      Italic
+    Series     Bold
+    Size       Small
+  EndFont
+End
+
+Style Keywords
+  CopyStyle    Abstract
+  LatexName    keyword
+  LabelString  "Keywords---"
+End
+
+
+##### Theorem-like environments from ifacconf.cls ####
+
+Style Theorem
+  Category     Reasoning
+  Margin       First_Dynamic
+  LatexType    Environment
+  LatexName    thm
+  NextNoIndent 1
+  OptionalArgs 1
+  LabelSep     xx
+  ParIndent    MMM
+  ParSkip      0.4
+  ItemSep      0.2
+  TopSep       0.7
+  BottomSep    0.7
+  ParSep       0.3
+  Align        Block
+  AlignPossible Block, Left
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Theorem \thetheorem."
+  Font
+    Shape      Up
+    Size       Normal
+  EndFont
+  LabelFont
+    Shape      Italic
+  EndFont
+End
+
+Style Proof
+  Category     Reasoning
+  Margin       First_Dynamic
+  LatexType    Environment
+  LatexName    pf
+  NextNoIndent 1
+  OptionalArgs 1
+  LabelSep     xx
+  ParIndent    MMM
+  ParSkip      0.4
+  ItemSep      0.2
+  TopSep       0.7
+  BottomSep    0.7
+  ParSep       0.3
+  Align        Block
+  AlignPossible Block, Left
+  LabelType    Static
+  LabelString  "Proof."
+  LabelFont
+    Series     Bold
+  EndFont
+End
+
+Style Lemma
+  CopyStyle    Theorem
+  LatexName    lem
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Lemma \thetheorem."
+End
+
+Style Claim
+  CopyStyle    Theorem
+  LatexName    claim
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Claim \thetheorem."
+End
+
+Style Conjecture
+  CopyStyle    Theorem
+  LatexName    conj
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Conjecture \thetheorem."
+End
+
+Style Corollary
+  CopyStyle    Theorem
+  LatexName    cor
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Corollary \thetheorem."
+End
+
+Style Fact
+  CopyStyle    Theorem
+  LatexName    fact
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Fact \thetheorem."
+End
+
+Style Hypothesis
+  CopyStyle    Theorem
+  LatexName    hypo
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Hypothesis \thetheorem."
+End
+
+Style Proposition
+  CopyStyle    Theorem
+  LatexName    prop
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Proposition \thetheorem."
+End
+
+Style Criterion
+  CopyStyle    Theorem
+  LatexName    crit
+  LabelType    Static
+  LabelCounter theorem
+  LabelString  "Criterion \thetheorem."
+End
+
+
+#### Back matter commands from ifacconf.cls ####
+
+Style Acknowledgments
+  CopyStyle    Abstract
+  Category     BackMatter
+  LatexName    ack
+  LabelType    Static
+  LabelString  "Acknowledgments---"
+End
+
+Style Bibliography
+  Margin       First_Dynamic
+  LatexType    Bib_Environment
+  LatexName    thebibliography
+  Category     BackMatter
+  NextNoIndent 1
+  LeftMargin   MM
+  ParSkip      0.4
+  ItemSep      0
+  TopSep       0.7
+  BottomSep    0.7
+  ParSep       0.5
+  Align        Block
+  AlignPossible Block, Left
+  LabelType    Bibliography
+  LabelString  "References"
+  LabelBottomSep 1.2
+  LabelFont
+    Series     Bold
+    Size       Larger
+  EndFont
+End
+
+Style Appendices
+  Margin       Dynamic
+  LatexType    Command
+  LatexName    appendices
+  Category     BackMatter
+  KeepEmpty    1
+  ParSkip      0.4
+  Align        Block
+  LabelSep     xx
+  LabelType    Static
+  LabelString  "Appendices"
+  LabelFont
+    Series     Bold
+    Color      Blue
+  EndFont
+End
+
+Style Appendix
+  CopyStyle    Appendices
+  LatexName    appendix
+  LabelString  "Appendix"
+  OptionalArgs 1
+End

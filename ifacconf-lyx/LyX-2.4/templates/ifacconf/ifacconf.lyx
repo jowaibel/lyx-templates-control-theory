@@ -1,0 +1,1815 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ifacconf
+\begin_preamble
+%===============================================================================
+% ifacconf.tex 2025-07-31 jpuente  
+% 2022-11-11 jpuente change length of abstract
+% 2025-07-31 jldiez added section on the use of AI
+% Template for IFAC meeting papers
+% Copyright (c) 2025 International Federation of Automatic Control
+%===============================================================================
+\usepackage{graphicx}      % include this line if your document contains figures
+\usepackage{natbib}        % required for bibliography
+%===============================================================================
+%\begin{document}
+\end_preamble
+\options conference
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style ifacconf
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frontmatter}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Title,
+ preferably not more than 10 words.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Style for IFAC Conferences & Symposia:
+ Use Title Case for Paper Title
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thanksref{footnoteinfo}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Thanks
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+footnoteinfo
+\end_layout
+
+\end_inset
+
+ Sponsor and financial support acknowledgment goes here.
+ Paper titles should be written in uppercase and lowercase letters,
+ not all uppercase.
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+First
+\end_layout
+
+\end_inset
+
+First A.
+ Author
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Second
+\end_layout
+
+\end_inset
+
+Second B.
+ Author,
+ Jr.
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Third
+\end_layout
+
+\end_inset
+
+Third C.
+ Author
+\end_layout
+
+\begin_layout Address
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+First
+\end_layout
+
+\end_inset
+
+ National Institute of Standards and Technology,
+ Boulder,
+ CO 80305 USA (e-mail:
+ author@ boulder.nist.gov)
+\end_layout
+
+\begin_layout Address
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Second
+\end_layout
+
+\end_inset
+
+ Colorado State University,
+ Fort Collins,
+ CO 80523 USA (e-mail:
+ author@lamar.
+ colostate.edu)
+\end_layout
+
+\begin_layout Address
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Third
+\end_layout
+
+\end_inset
+
+ Electrical Engineering Department,
+ Seoul National University,
+ Seoul,
+ Korea,
+ (e-mail:
+ author@snu.ac.kr)
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Abstract of 50--100 words
+\end_layout
+
+\end_inset
+
+These instructions give you guidelines for preparing papers for IFAC technical meetings.
+ Please use this document as a template to prepare your manuscript.
+ For submission guidelines,
+ follow instructions on paper submission system as well as the event website.
+\end_layout
+
+\begin_layout Keywords
+Five to ten keywords,
+ preferably chosen from the IFAC keyword list.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frontmatter}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+This document is a template for \SpecialChar LaTeX2e
+.
+ If you are reading a paper or PDF version of this document,
+ please download the electronic file 
+\family typewriter
+ifacconf.tex
+\family default
+.
+ You will also need the class file 
+\family typewriter
+ifacconf.cls
+\family default
+.
+ Both files are available on the IFAC web site.
+ 
+\end_layout
+
+\begin_layout Standard
+Please stick to the format defined by the 
+\family typewriter
+ifacconf
+\family default
+ class,
+ and do not change the margins or the general layout of the paper.
+ It is especially important that you do not put any running header/footer or page number in the submitted paper.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This is the default for the provided class file.
+\end_layout
+
+\end_inset
+
+ Use 
+\emph on
+italics
+\emph default
+ for emphasis;
+ do not underline.
+ 
+\end_layout
+
+\begin_layout Standard
+Page limits may vary from conference to conference.
+ Please observe the page limits of the event for which your paper is intended.
+\end_layout
+
+\begin_layout Section
+Procedure for Paper Submission
+\end_layout
+
+\begin_layout Standard
+Next we see a few subsections.
+\end_layout
+
+\begin_layout Subsection
+Review Stage
+\end_layout
+
+\begin_layout Standard
+For submission guidelines,
+ follow instructions on paper submission system as well as the event website.
+\end_layout
+
+\begin_layout Standard
+Note that conferences impose strict page limits,
+ so it will be better for you to prepare your initial submission in the camera ready layout so that you will have a good estimate for the paper length.
+ Additionally,
+ the effort required for final submission will be minimal.
+\end_layout
+
+\begin_layout Subsection
+Equations
+\end_layout
+
+\begin_layout Standard
+Some words might be appropriate describing equation
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:sample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ if we had but time and space enough.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{{\partial F}}{{\partial t}}=D\frac{{\partial^{2}F}}{{\partial x^{2}}}.\label{eq:sample}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+See 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Abl:56"
+literal "false"
+
+\end_inset
+
+,
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AbTaRu:54"
+literal "false"
+
+\end_inset
+
+,
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Keo:58"
+literal "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pow:85"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Example.
+\end_layout
+
+\begin_layout Standard
+This equation goes far beyond the celebrated theorem ascribed to the great Pythagoras by his followers.
+\end_layout
+
+\begin_layout Theorem
+The square of the length of the hypotenuse of a right triangle equals the sum of the squares of the lengths of the other two sides.
+\end_layout
+
+\begin_layout Proof
+The square of the length of the hypotenuse of a right triangle equals the sum of the squares of the lengths of the other two sides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+There are a number of predefined theorem-like environments in ifacconf.cls:
+\end_layout
+
+\begin_layout Theorem
+...
+\end_layout
+
+\begin_layout Lemma
+...
+\end_layout
+
+\begin_layout Claim
+...
+\end_layout
+
+\begin_layout Conjecture
+...
+\end_layout
+
+\begin_layout Corollary
+...
+\end_layout
+
+\begin_layout Fact
+...
+\end_layout
+
+\begin_layout Hypothesis
+...
+\end_layout
+
+\begin_layout Proposition
+...
+\end_layout
+
+\begin_layout Criterion
+...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Of course LaTeX manages equations through built-in macros.
+ You may wish to use the 
+\family typewriter
+amstex
+\family default
+ package for enhanced math capabilities.
+\end_layout
+
+\begin_layout Subsection
+Figures
+\end_layout
+
+\begin_layout Standard
+To insert figures,
+ use the 
+\family typewriter
+graphicx
+\family default
+ package.
+ Although other graphics packages can also be used,
+ 
+\family typewriter
+graphicx
+\family default
+ is simpler to use.
+ See Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:bifurcation"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ for an example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ifacconf/bifurcation.jpg
+	lyxscale 40
+	width 8.4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bifurcation"
+
+\end_inset
+
+Bifurcation:
+ Plot of local maxima of 
+\begin_inset Formula $x$
+\end_inset
+
+ with damping 
+\begin_inset Formula $a$
+\end_inset
+
+ decreasing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figures must be centered,
+ and have a caption at the bottom.
+ 
+\end_layout
+
+\begin_layout Subsection
+Tables
+\end_layout
+
+\begin_layout Standard
+Tables must be centered and have a caption above them,
+ numbered withArabic numerals.
+ See table
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:margins"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ for an example.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:margins"
+
+\end_inset
+
+Margin settings
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Page
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Top
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bottom
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Left/Right
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+First
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rest
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Final Stage
+\end_layout
+
+\begin_layout Standard
+Authors are expected to mind the margins diligently.
+ Papers need to be stamped with event data and paginated for inclusion in the proceedings.
+ If your manuscript bleeds into margins,
+ you will be required to resubmit and delay the proceedings preparation in the process.
+\end_layout
+
+\begin_layout Subsubsection
+Page margins.
+\end_layout
+
+\begin_layout Standard
+See table
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:margins"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ for the page margins specification.
+ All dimensions are in 
+\emph on
+centimeters
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+PDF Creation
+\end_layout
+
+\begin_layout Standard
+All fonts must be embedded/subsetted in the PDF file.
+ Use one of the following tools to produce a good quality PDF file:
+\end_layout
+
+\begin_layout Subsubsection
+PDFLaTeX
+\end_layout
+
+\begin_layout Standard
+is a special version of LaTeX by Han The Thanh which produces PDF output directly using Type-1 fonts instead of the standard 
+\family typewriter
+dvi
+\family default
+ file.
+ It accepts figures in JPEG,
+ PNG,
+ and PDF formats,
+ but not PostScript.
+ Encapsulated PostScript figures can be converted to PDF with the 
+\family typewriter
+epstopdf
+\family default
+ tool or with Adobe Acrobat Distiller.
+\end_layout
+
+\begin_layout Subsubsection
+Generating PDF from PostScript
+\end_layout
+
+\begin_layout Standard
+is the classical way of producing PDF files from LaTeX.
+ The steps are:
+\end_layout
+
+\begin_layout Enumerate
+Produce a 
+\family typewriter
+dvi
+\family default
+ file by running 
+\family typewriter
+latex
+\family default
+ twice.
+\end_layout
+
+\begin_layout Enumerate
+Produce a PostScript (
+\family typewriter
+ps
+\family default
+) file with 
+\family typewriter
+dvips
+\family default
+.
+\end_layout
+
+\begin_layout Enumerate
+Produce a PDF file with 
+\family typewriter
+ps2pdf
+\family default
+ or Adobe Acrobat Distiller.
+\end_layout
+
+\begin_layout Subsection
+Copyright Form
+\end_layout
+
+\begin_layout Standard
+IFAC will put in place an electronic copyright transfer system in due course.
+ Please 
+\emph on
+do not
+\emph default
+ send copyright forms by mail or fax.
+ More information on this will be made available on IFAC website.
+\end_layout
+
+\begin_layout Section
+Units
+\end_layout
+
+\begin_layout Standard
+Use SI as primary units.
+ Other units may be used as secondary units (in parentheses).
+ This applies to papers in data storage.
+ For example,
+ write 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\ensuremath{15\,\mathrm{Gb}/\mathrm{cm}^{2}}$
+\end_inset
+
+ (
+\begin_inset Formula $100\,\mathrm{Gb}/\mathrm{in}^{2}$
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+.
+ An exception is when English units are used as identifiers in trade,
+ such as 
+\begin_inset Quotes eld
+\end_inset
+
+3.5 in disk drive
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Avoid combining SI and other units,
+ such as current in amperes and magnetic field in oersteds.
+ This often leads to confusion because equations do not balance dimensionally.
+ If you must use mixed units,
+ clearly state the units for each quantity in an equation.
+ The SI unit for magnetic field strength 
+\begin_inset Formula $\mathbf{H}$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{A}/\mathrm{m}$
+\end_inset
+
+.
+ However,
+ if you wish to use units of 
+\begin_inset Formula $\mathrm{T}$
+\end_inset
+
+,
+ either refer to magnetic flux density 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ or magnetic field strength symbolized as 
+\begin_inset Formula $\mu_{0}\,\mathbf{H}$
+\end_inset
+
+.
+ Use the center dot to separate compound units,
+ e.g.,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}\cdot\mathrm{m}^{2}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Helpful Hints
+\end_layout
+
+\begin_layout Subsection
+Figures and Tables
+\end_layout
+
+\begin_layout Standard
+Figure axis labels are often a source of confusion.
+ Use words rather than symbols.
+ As an example,
+ write the quantity 
+\begin_inset Quotes eld
+\end_inset
+
+Magnetization
+\begin_inset Quotes erd
+\end_inset
+
+,
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Magnetization M
+\begin_inset Quotes erd
+\end_inset
+
+,
+ not just 
+\begin_inset Quotes eld
+\end_inset
+
+M
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Put units in parentheses.
+ Do not label axes only with units.
+ For example,
+ write 
+\begin_inset Quotes eld
+\end_inset
+
+Magnetization (
+\begin_inset Formula $\mathrm{A}/\mathrm{m}$
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Magnetization (
+\begin_inset Formula $\mathrm{A}\mathrm{m}^{-1}$
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+,
+ not just 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}/\mathrm{m}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Do not label axes with a ratio of quantities and units.
+ For example,
+ write 
+\begin_inset Quotes eld
+\end_inset
+
+Temperature (
+\begin_inset Formula $\mathrm{K}$
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+,
+ not 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\mbox{Temperature}/\mathrm{K}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Multipliers can be especially confusing.
+ Write 
+\begin_inset Quotes eld
+\end_inset
+
+Magnetization (
+\begin_inset Formula $\mathrm{kA}/\mathrm{m}$
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes erd
+\end_inset
+
+Magnetization (
+\begin_inset Formula $10^{3}\mathrm{A}/\mathrm{m}$
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Do not write 
+\begin_inset Quotes eld
+\end_inset
+
+Magnetization 
+\begin_inset Formula $(\mathrm{A}/\mathrm{m})\times1000$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ because the reader would not know whether the axis label means 
+\begin_inset Formula $16000\,\mathrm{A}/\mathrm{m}$
+\end_inset
+
+ or 
+\begin_inset Formula $0.016\,\mathrm{A}/\mathrm{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+References
+\end_layout
+
+\begin_layout Standard
+Use Harvard style references (see at the end of this document).
+ With \SpecialChar LaTeX
+,
+ you can process an external bibliography database using 
+\family typewriter
+bibtex
+\family default
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In this case you will also need the 
+\family typewriter
+ifacconf.bst
+\family default
+ file,
+ which is part of the 
+\family typewriter
+ifaconf
+\family default
+ package.
+\end_layout
+
+\end_inset
+
+ or insert it directly into the reference section.
+ Footnotes should be avoided as far as possible.
+ Please note that the references at the end of this document are in the preferred referencing style.
+ Papers that have not been published should be cited as 
+\begin_inset Quotes eld
+\end_inset
+
+unpublished
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Capitalize only the first word in a paper title,
+ except for proper nouns and element symbols.
+\end_layout
+
+\begin_layout Subsection
+Abbreviations and Acronyms
+\end_layout
+
+\begin_layout Standard
+Define abbreviations and acronyms the first time they are used in the text,
+ even after they have already been defined in the abstract.
+ Abbreviations such as IFAC,
+ SI,
+ ac,
+ and dc do not have to be defined.
+ Abbreviations that incorporate periods should not have spaces:
+ write 
+\begin_inset Quotes eld
+\end_inset
+
+C.N.R.S.
+\begin_inset Quotes erd
+\end_inset
+
+,
+ not 
+\begin_inset Quotes eld
+\end_inset
+
+C.
+ N.
+ R.
+ S.
+\begin_inset Quotes erd
+\end_inset
+
+ Do not use abbreviations in the title unless they are unavoidable (for example,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+IFAC
+\begin_inset Quotes erd
+\end_inset
+
+ in the title of this article).
+\end_layout
+
+\begin_layout Subsection
+Equations
+\end_layout
+
+\begin_layout Standard
+Number equations consecutively with equation numbers in parentheses flush with the right margin,
+ as in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample2"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+ To make your equations more compact,
+ you may use the solidus (
+\begin_inset Formula $/$
+\end_inset
+
+),
+ the 
+\begin_inset Formula $\exp$
+\end_inset
+
+ function,
+ or appropriate exponents.
+ Use parentheses to avoid ambiguities in denominators.
+ Punctuate equations when they are part of a sentence,
+ as in 
+\begin_inset Formula 
+\begin{multline}
+\int_{0}^{r_{2}}F(r,\varphi)drd\varphi=[\sigma r_{2}/(2\mu_{0})]\\
+\cdot\int_{0}^{\inf}exp(-\lambda|z_{j}-z_{i}|)\lambda^{-1}J_{1}(\lambda r_{2})J_{0}(\lambda r_{i})d\lambda\label{eq:sample2}
+\end{multline}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Be sure that the symbols in your equation have been defined before the equation appears or immediately following.
+ Italicize symbols (
+\begin_inset Formula $T$
+\end_inset
+
+ might refer to temperature,
+ but T is the unit tesla).
+ Refer to 
+\begin_inset Quotes eld
+\end_inset
+
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+,
+ not 
+\begin_inset Quotes eld
+\end_inset
+
+Eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+)
+\begin_inset Quotes erd
+\end_inset
+
+,
+ except at the beginning of a sentence:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+) is \SpecialChar ldots
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Other Recommendations
+\end_layout
+
+\begin_layout Standard
+Use one space after periods and colons.
+ Hyphenate complex modifiers:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+zero-field-cooled magnetization
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Avoid dangling participles,
+ such as,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Using (1),
+ the potential was calculated
+\begin_inset Quotes erd
+\end_inset
+
+ (it is not clear who or what used (1)).
+ Write instead:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+The potential was calculated by using (1)
+\begin_inset Quotes erd
+\end_inset
+
+,
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Using (1),
+ we calculated the potential
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A parenthetical statement at the end of a sentence is punctuated outside of the closing parenthesis (like this).
+ (A parenthetical sentence is punctuated within the parentheses.) Avoid contractions;
+ for example,
+ write 
+\begin_inset Quotes eld
+\end_inset
+
+do not
+\begin_inset Quotes erd
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+don' t
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The serial comma is preferred:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+A,
+ B,
+ and C
+\begin_inset Quotes erd
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+A,
+ B and C
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+A conclusion section is not required.
+ Although a conclusion may review the main points of the paper,
+ do not replicate the abstract as the conclusion.
+ A conclusion might elaborate on the importance of the work or suggest applications and extensions.
+\end_layout
+
+\begin_layout Acknowledgments
+Place acknowledgments here.
+\end_layout
+
+\begin_layout Section*
+DECLARATION OF GENERATIVE AI AND AI-ASSISTED TECHNOLOGIES IN THE WRITING PROCESS
+\end_layout
+
+\begin_layout Standard
+During the preparation of this work the author(s) used [NAME TOOL / SERVICE] in order to [REASON].
+ After using this tool/service,
+ the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the publication.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "ifacconf_example"
+encoding "default"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Author(Year)"
+key "auth:YY"
+literal "false"
+
+\end_inset
+
+(Dummy)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Able(1956)"
+key "Abl:56"
+literal "false"
+
+\end_inset
+
+B.C.
+ Able.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+Nucleic acid content of microscope.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+
+\emph on
+Nature
+\emph default
+,
+ 135:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+penalty0
+\end_layout
+
+\end_inset
+
+ 7–9,
+ 1956
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Able et al.(1954)Able, Tagg, and Rush"
+key "AbTaRu:54"
+literal "false"
+
+\end_inset
+
+B.C.
+ Able,
+ R.A.
+ Tagg,
+ and M.
+\begin_inset space ~
+\end_inset
+
+Rush.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+Enzyme-catalyzed cellular transanimations.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+In A.F.
+ Round,
+ editor,
+ 
+\emph on
+Advances in Enzymology
+\emph default
+,
+ volume
+\begin_inset space ~
+\end_inset
+
+2,
+ pages 125–247.
+ Academic Press,
+ New York,
+ 3rd edition,
+ 1954.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Keohane(1958)"
+key "Keo:58"
+literal "false"
+
+\end_inset
+
+R.
+\begin_inset space ~
+\end_inset
+
+Keohane.
+
+\emph on
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+Power and Interdependence:
+ World Politics in Transitions
+\emph default
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+Little,
+ Brown & Co.,
+ Boston,
+ 1958.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Powers(1958)"
+key "Pow:85"
+literal "false"
+
+\end_inset
+
+T.
+\begin_inset space ~
+\end_inset
+
+Powers.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+Is there a way out?
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock{}
+\end_layout
+
+\end_inset
+
+
+\emph on
+Harpers
+\emph default
+,
+ pages 35–47,
+ June 1985.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Appendix
+
+\end_layout
+
+\begin_layout Section
+A summary of Latin grammar
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Each appendix must have a short title.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Some Latin vocabulary
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Sections and subsections are supported in the appendices
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

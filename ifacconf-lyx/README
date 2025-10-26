@@ -1,0 +1,28 @@
+Installation
+=============
+
+Typically a LyX template consists of following files:
+*.cls     - TeX class file
+*.layout  - LyX format/layout file
+*.lyx     - LyX template file
+(*.tex    - TeX sample file)
+
+Mac OS X
+--------
+Find the location of your latex installation, e.g., /usr/local/texlive/texmf-local/ and copy the ifacconf files according to the folder structure provided (bibtex/..., tex/...)
+
+Find the location of your LyX installation files, e.g., ~/Library/Application Support/LyX-2.4/ and copy the ifacconf files according to the folder structured provided (layouts/, templates/).
+
+After installation:
+-----------------------------
+'sudo texhash' - to make TeX aware of the new class
+'LyX -> Reconfigure' - to make LyX aware of the new files.
+
+=============
+Usage
+=============
+To check that everything works (including the figure), directly open the ifacconf.lyx file from the templates/ folder.
+
+For a new document:
+In LyX: File > New from Template...
+When inserting a Bib(la)TeX Bibliography, set no style (leave the Style field emtpy), because the style is already set in the document settings/in the .cls file.
